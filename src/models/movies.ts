@@ -1,12 +1,12 @@
 import { Schema, model, Document } from "mongoose";
 
 export interface IUser extends Document {
-  Title: String,
-  Director: String,
-  Category: String,
-  Description: String, 
-  Rating : String
-} 
+  Title: String;
+  Director: String;
+  Category: String;
+  Description: String;
+  Rating: String;
+}
 //Schema MOVIES
 //trim clean white
 const moviesSchema = new Schema({
@@ -14,7 +14,7 @@ const moviesSchema = new Schema({
     type: String,
     require: true,
     trim: true,
-    unique: true
+    unique: true,
   },
   Director: {
     type: String,
