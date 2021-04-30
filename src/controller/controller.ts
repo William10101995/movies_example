@@ -5,7 +5,8 @@ import Movie from "../models/movies";
 const instaceMovie = new moviesClass();
 //Obtener Peliculas
 export const getMovies: RequestHandler = async (req, res) => {
-
+  const movies = await instaceMovie.readMovie();
+  res.status(200).json(movies);
 };
 
 //Crear una nueva Pelicula
