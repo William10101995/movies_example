@@ -1,2 +1,2 @@
-# movies_example
-Repositorio de prueba para TP3 cliente servidor
+# movies_example_API
+ABM de peliculas siguiendo el patron repositorio
